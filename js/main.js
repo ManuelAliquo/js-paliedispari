@@ -1,6 +1,5 @@
 // Chiedo all'utente una parola
-let chosenWord = "nerd";
-//prompt("Inserisci una parola", "lol").trim().toLowerCase();
+let chosenWord = prompt("Inserisci una parola", "lol").trim().toLowerCase();
 console.log(chosenWord);
 
 // Creo la mia funzione per verificare se la parola è palindroma
@@ -19,6 +18,12 @@ function palindromeCheck() {
   }
 
   console.log(reversedWord);
+
+  // Output
+  isWordPalindrome = splittedWord.join() === reversedWord.join();
+  isWordPalindrome
+    ? console.log("isWordPalindrome:", isWordPalindrome) + alert("The word is Palindrome")
+    : console.log("IsWordPalindrome:", isWordPalindrome) + alert("The word is not Palindrome");
 }
 
 // Invoco la funzione per verificare
