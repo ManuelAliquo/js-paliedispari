@@ -45,7 +45,17 @@ palindromeCheck(chosenWord);
 
 // Chiedo all'utente se sceglie Pari o Dispari
 let userChoice = prompt(`Scegli tra "Pari" o "Dispari"`, "pari").trim().toLowerCase();
+console.log("userChoice:", userChoice);
 
 // Chiedo all'utente un numero da 1 a 5
 let userNumber = parseInt(prompt("Scegli un numero da 1 a 5", 3));
-console.log(userNumber);
+console.log("userNumber", userNumber);
+
+// Dichiaro una funzione per generare il numero randomico del pc
+function randomNumberGenerator() {
+  return Math.floor(Math.random() * 5 + 1);
+}
+
+// Invoco la funzione
+let pcNumber = randomNumberGenerator();
+console.log("pcNumber:", pcNumber);
